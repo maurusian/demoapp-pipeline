@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build demo-app'
+        sh 'chmod 777 run_build_script.sh'
         sh 'sh run_build_script.sh'
       }
     }
