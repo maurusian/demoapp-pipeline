@@ -13,7 +13,6 @@ pipeline {
         stage('Linux Tests') {
           steps {
             echo 'Run Linux Tests'
-            sh 'sh run_linux_tests.sh'
           }
         }
 
